@@ -17,4 +17,7 @@ cache:
     - $HOME/.composer/cache
     - vendor
 
+install:
+  - composer install --no-interaction --prefer-source
+
 # vim:ts=2:sw=2:et
