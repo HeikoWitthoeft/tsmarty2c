@@ -1,3 +1,5 @@
+as my project uses smartyBC i changed this parser also to use SmartyBC.
+
 # tsmarty2c.php - the command line utility
 
 `tsmarty2c.php` - A command line utility that rips gettext strings from smarty source files and converts them to `.pot` (PO-Template).
