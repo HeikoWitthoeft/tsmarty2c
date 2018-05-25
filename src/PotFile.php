@@ -15,7 +15,7 @@
 namespace SmartyGettext;
 
 use Geekwright\Po\Exceptions\FileNotWritableException;
-use Smarty;
+use SmartyBC;
 use SmartyGettext\Tokenizer\Tag\TranslateTag;
 use SmartyGettext\Tokenizer\TokenParser;
 use Geekwright\Po\Exceptions\FileNotReadableException;
@@ -38,7 +38,7 @@ class PotFile
 
     public function __construct()
     {
-        $this->smarty = new Smarty();
+        $this->smarty = new SmartyBC();
         $this->smarty->registerDefaultPluginHandler(new PluginLoader());
 
         $this->file = new PoFile();
